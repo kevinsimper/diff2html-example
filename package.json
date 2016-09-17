@@ -1,0 +1,22 @@
+{
+  "name": "diff2html-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pushstate-server .",
+    "build": "browserify -t brfs index.js > bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "brfs": "^1.4.3",
+    "browserify": "^13.1.0",
+    "pushstate-server": "^2.0.0"
+  },
+  "dependencies": {
+    "diff2html": "^2.0.6"
+  }
+}
