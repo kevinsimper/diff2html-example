@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "pushstate-server ./docs",
-    "build": "browserify -t brfs index.js > ./docs/bundle.js",
+    "copy-css": "cp ./node_modules/diff2html/dist/diff2html.min.css docs/diff2html.min.css",
+    "build": "npm run copy-css & browserify index.js > ./docs/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
